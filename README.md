@@ -1,80 +1,220 @@
-# Reta Cantabria 2025
+# Paleta en Mano
 
-## Contenidos
+Plataforma web para la gestión integral de una academia de arte, orientada a la administración de usuarios, clases, grupos, inventario y comunicaciones internas.
 
-[1. Información general.](#informacion-general)
+## Descripción del proyecto
 
-[2. Tecnologías.](#tecnologias)
+Paleta en Mano es una aplicación web desarrollada como proyecto académico con enfoque profesional, simulando un entorno real de gestión de una academia de arte y su infraestructura TI.  
+La solución centraliza la operativa diaria de la academia (gestión de alumnos, profesores, clases, materiales y comunicaciones internas) en un único sistema, con control de acceso basado en roles y tareas automatizadas mediante scripts en servidor.
 
-[3. Instrucciones de instalación y desarrollo.](#instrucciones-de-instalacion)
+Este proyecto pone el foco en buenas prácticas de desarrollo web, administración de sistemas Linux, automatización de tareas y seguridad básica en entornos productivos.
 
-[4. Modificaciones a realizar.](#modificaciones-a-realizar)
+## Características principales
 
-## Información general
+- Gestión completa de usuarios y roles (administración, profesores, alumnos).
+- Administración de clases, grupos y asignación de profesores.
+- Sistema de notificaciones internas entre usuarios autenticados.
+- Gestión de inventario de materiales de la academia.
+- Control de notas y seguimiento académico por alumno y grupo.
+- Automatización de tareas administrativas mediante scripts en Bash.
+- Sistema de copias de seguridad automáticas de la base de datos.
+- Arquitectura preparada para despliegues escalables en servidores Linux.
 
-Plantilla para la modificación de una aplicación web durante el proyecto ABS **Alisal Me Activa** de primer curso de **Administración de Sistemas Informáticos en Red**.
+## Roles del sistema
 
-## Tecnologías
+La aplicación adapta sus funcionalidades según el tipo de usuario autenticado.
 
-- SQL.
-- PHP.
+### Administradores
+
+Los administradores disponen de acceso completo a las funcionalidades de administración del sistema.
+
+#### Gestión de usuarios
+
+- Archivo principal: `admin_usu.php`
+- Funcionalidades:
+  - Visualización de usuarios registrados.
+  - Creación de nuevos usuarios.
+  - Modificación de datos existentes.
+  - Control de usuarios creados recientemente.
+
+#### Gestión de clases
+
+- Archivo principal: `admin_clases.php`
+- Funcionalidades:
+  - Administración de clases disponibles.
+  - Asignación de grupos y profesores.
+  - Organización de las actividades académicas.
+
+#### Sistema de notificaciones
+
+- Archivo principal: `notificaciones.php`
+- Funcionalidades:
+  - Envío de notificaciones globales.
+  - Consulta de mensajes leídos y no leídos.
+  - Comunicación interna entre usuarios.
+
+#### Perfil de usuario
+
+- Archivo principal: `perfil.php`
+- Funcionalidades:
+  - Modificación de datos personales.
+  - Actualización de credenciales y configuración.
+
+### Profesores
+
+Los profesores disponen de herramientas orientadas al seguimiento académico y a la organización de sus grupos.
+
+#### Mis clases
+
+- Archivo principal: `misclases_prof.php`
+- Funcionalidades:
+  - Consulta de clases asignadas.
+  - Acceso a notas e inventario asociado.
+  - Gestión académica de alumnos.
+
+#### Sistema de notificaciones
+
+- Archivo principal: `notificaciones.php`
+- Funcionalidades:
+  - Consulta de avisos y comunicaciones internas.
+
+#### Perfil de usuario
+
+- Archivo principal: `perfil.php`
+- Funcionalidades:
+  - Gestión de información personal.
+
+## Scripts de automatización
+
+### `nuevosUsers.sh`
+
+Script orientado a la provisión de nuevos usuarios en el sistema.
+
+- Creación automática de usuarios en el servidor.
+- Generación de claves SSH.
+- Preparación del acceso remoto seguro para nuevos usuarios.
+
+Ejemplo de uso:
+
+```bash
+./nuevosUsers.sh nombre_usuario
+```
+
+### `backupsBaseDatos.sh`
+
+Script destinado a la generación automática de copias de seguridad mediante `mysqldump`.
+
+- Exportación completa de la base de datos.
+- Automatización mediante tareas cron.
+- Soporte para recuperación ante fallos y pérdida de datos.
+
+Ejemplo de automatización diaria (cron):
+
+```bash
+0 2 * * * /ruta/backupsBaseDatos.sh
+```
+
+## Tecnologías utilizadas
+
+### Backend
+
+- PHP 8.x
+- MySQL / MariaDB
+- PDO para acceso a base de datos
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Infraestructura y sistemas
+
+- Linux
+- Bash scripting
+- SSH
+- Cron Jobs
+- Servidor web Apache o Nginx
+
+### Control de versiones
+
+- Git
+- GitHub
+
+## Seguridad
+
+La aplicación incorpora medidas orientadas a garantizar la integridad y seguridad del sistema:
+
+- Autenticación de usuarios.
+- Control de permisos por roles.
+- Uso de PDO para conexiones seguras a base de datos (prevención de inyecciones SQL).
+- Automatización de copias de seguridad periódicas.
+- Acceso remoto mediante claves SSH en lugar de contraseñas planas.
+
+## Estructura del proyecto
+
+```text
+/
+├── admin/
+├── profesores/
+├── alumnos/
+├── funciones/
+├── scripts/
+├── bbdd/
+├── assets/
+├── evidencias/
+└── README.md
+```
+
+## Instalación y despliegue
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/usuario/repositorio.git
+   cd repositorio
+   ```
+
+2. Configurar la base de datos:
+
+   - Crear una base de datos en MySQL / MariaDB.
+   - Importar los scripts SQL incluidos en el directorio:
+
+   ```text
+   /bbdd/
+   ```
+
+3. Configurar credenciales de conexión:
+
+   - Editar el archivo de configuración correspondiente (por ejemplo, `config.php` o similar).
+   - Ajustar host, nombre de base de datos, usuario y contraseña.
+
+4. Configurar el servidor web:
+
+   - Configurar Apache o Nginx apuntando al directorio principal del proyecto.
+   - Asegurarse de que PHP esté habilitado y correctamente configurado.
+
+5. Acceso a la aplicación:
+
+   - Abrir el navegador y acceder a la URL configurada en el servidor (por ejemplo, `http://localhost/paleta-en-mano`).
+
+## Objetivos del proyecto
+
+Este proyecto busca simular un entorno real de administración TI aplicando conceptos relacionados con:
+
+- Desarrollo web orientado a gestión interna.
+- Administración de sistemas Linux.
+- Gestión de usuarios y permisos.
+- Automatización de tareas de administración mediante scripts.
+- Seguridad informática básica en entorno servidor.
+- Trabajo colaborativo y control de versiones con Git y GitHub.
+
+## Estado del proyecto
+
+Proyecto académico en desarrollo activo, con base funcional completa para la gestión interna de una academia de arte y margen de ampliación para nuevas funcionalidades.
 
 
-## Instrucciones de instalación 
+## Licencia
 
-1. Copiar la carpeta **`INVENTARIO`** a la ubicación de publicación del servidor web.
-
-2. Importar a MySql la base de datos que hayáis diseñado para el inventario.
-
-3. A continuación se facilita la creación de un usuario de la BD con los premisos para hacer las operaciones de CRUD.
-
-<details>
-    <summary>Desplegar para ver el código</summary>
-
-        -- Seleccionar la base de datos pdo
-        USE pdo;
-        -- Crear el usuario
-        CREATE USER 'userCRUD'@'localhost' IDENTIFIED BY 'CRUD@1234';
-        -- Otorgar permisos de CRUD sobre la base de datos pdo
-        GRANT SELECT, INSERT, UPDATE, DELETE ON pdo.* TO 'userCRUD'@'localhost';
-        -- Aplicar los cambios
-        FLUSH PRIVILEGES;
-</details>
-
-## Modificaciones a realizar
-
-<details>
-    <summary>Desplegar para ver</summary>
-
-    Fase 1: Preparación de la base de datos para que la aplicación pueda operar sobre ella
-        Ejecutar la consulta del fichero **`/INVENTARIO-main/bd/pdo.sql`** para crear una tabla usuarios y cargar el usuario **Administrador/Administrador** del inventario.
-        📌 Modificar dicha tabla para ajustarla a la de la base de datos diseñada.
-        📌 Crear un usuario de la base de datos que pueda hacer las operaciones del CRUD.
-
-    Fase 2: Establecer la conexión con la base de datos
-        Modificar los parámetros de llamada de la función PHP de conexión a la base de datos, que está en **`/INVENTARIO-main/php/main.php`**, para que coincidan con los del servidor de desarrollo.
-        *RECOMENDACIÓN:* Modificar la aplicación en un servidor local, actualizando el repositorio remoto para que todos los miembros del equipo tengáis acceso en todo momento a la aplicación actualizada. Una vez que verifiquéis la funcionalidad completa de la aplicación, migrarla al servidor web del reto, modificando de nuevo estos parámetros de conexión a la base de datos para que coincidan con los del servidor de producción. 
-
-    Fase 3: Modificar los ficheros PHP necesarios para asegurar la funcionalidad de las operaciones de listado, búsqueda, creación y eliminación
-        📌 Modificar los formularios de intercambio de datos, que se encuentran en el directorio /INVENTARIO-main/vistas para ajustar los campos a los de las tablas de la base de datos.
-        📌 Adaptar las consultas SQL de los ficheros de /INVENTARIO-main/vistas y /INVENTARIO-main/php que lo requieran para que operen sobre los campos de la base de datos.
-
-    Fase 4: Crear transformación XSL
-        Construir un fichero de transformación /INVENTARIO-main/schemas/estilo-transformacion.xsl que visualice como HTML el fichero XML generado por la aplicación al solicitar un listado de los recursos del inventario.
-        El formato aplicado a cada recurso será diferente en función del valor de su estado.
-        El estilo de la transformación se definirá en un fichero CSS y se ubicará en el directorio adecuado de la aplicación.
-
-    Fase 5: Creción de una nueva opción del menú de navegación
-        📌 Modificar las opciones del menú de navegación, creando una nueva opción en el desplegable de Recursos que permitirá al usuario la carga masiva de la tabla de recursos a través de un fichero XML. El enlace estará asociado con el fichero /INVENTARIO-main/vistas/resource_upload_file.php.
-        📌 Construir un vocabulario XML-Schema que llamaremos /INVENTARIO-main/schemas/validación_recursos.xsd para garantizar que la estructura y el formato de los datos del fichero xml de carga masiva es la adecuada para cargar los datos en la tabla de recursos.
-        📌 Verificar la funcionalidad de la opción de carga masiva que se encuentra en el menú de Recursos.
-
-    Fase 6: Modificar el estilo de la aplicación
-        📌 Realizar los cambios necesarios en la aplicación para que el menú de navegación pase a tener orientación vertical.
-        📌 Modificar el estilo de la aplicación de forma libre.
-
-    A lo largo del proceso:
-        - Mantener el código límpio y documentado.
-        - Utilizar GitHub para mantener actualizado el versionado de código.
-        - Actualizar el fichero **`README.md`** para mantener el repositorio de la aplicación documentado durante todo el proceso de desarrollo.
-</details>
+Proyecto desarrollado con fines educativos y formativos.  
+Puede adaptarse y reutilizarse para fines académicos o personales, respetando el reconocimiento de la autoría original.
