@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<historial_usos>
+    <historial_uso>
+        <usuario_id>1</usuario_id>
+        <recurso_id>1</recurso_id>
+        <uso_fecha_inicio>2025-02-15T08:00:00</uso_fecha_inicio>
+        <uso_fecha_fin>2025-02-15T10:00:00</uso_fecha_fin>
+    </historial_uso>
+    <historial_uso>
+        <usuario_id>2</usuario_id>
+        <recurso_id>2</recurso_id>
+        <uso_fecha_inicio>2025-02-16T09:00:00</uso_fecha_inicio>
+        <uso_fecha_fin>2025-02-16T11:00:00</uso_fecha_fin>
+    </historial_uso>
+</historial_usos>

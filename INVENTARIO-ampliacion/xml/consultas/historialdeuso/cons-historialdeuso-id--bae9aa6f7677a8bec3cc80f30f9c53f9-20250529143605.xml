@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/historialdeuso.xslt"?>
+<historialdeusos>
+  <historialdeuso>
+    <uso_id>1</uso_id>
+    <recurso_id>Proyector</recurso_id>
+    <usuario_id>Administrador</usuario_id>
+    <uso_fecha_inicio>2025-02-15 08:00:00</uso_fecha_inicio>
+    <uso_fecha_fin>2025-02-15 10:00:00</uso_fecha_fin>
+  </historialdeuso>
+  <historialdeuso>
+    <uso_id>2</uso_id>
+    <recurso_id>Ordenador</recurso_id>
+    <usuario_id>aLopez2</usuario_id>
+    <uso_fecha_inicio>2025-02-16 09:00:00</uso_fecha_inicio>
+    <uso_fecha_fin>2025-02-16 11:00:00</uso_fecha_fin>
+  </historialdeuso>
+</historialdeusos>

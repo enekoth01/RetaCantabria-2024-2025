@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/usuarios.xslt"?>
+<usuarios>
+  <usuario>
+    <usuario_id>3</usuario_id>
+    <usuario_nombre>Alma</usuario_nombre>
+    <usuario_apellido>Pereda</usuario_apellido>
+    <usuario_usuario>aPereda3</usuario_usuario>
+    <usuario_email>apereda3@reto.es</usuario_email>
+  </usuario>
+</usuarios>

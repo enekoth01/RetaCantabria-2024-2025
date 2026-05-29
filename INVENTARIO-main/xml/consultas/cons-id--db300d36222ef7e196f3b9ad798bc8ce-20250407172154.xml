@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../schemas/estilo_transformacion.xslt"?>
+<recursos>
+  <recurso>
+    <recurso_id>1</recurso_id>
+    <recurso_nombre>Recurso Manuel</recurso_nombre>
+    <recurso_precio/>
+    <recurso_estado>En reparacion</recurso_estado>
+    <recurso_ubicacion>A000</recurso_ubicacion>
+  </recurso>
+</recursos>

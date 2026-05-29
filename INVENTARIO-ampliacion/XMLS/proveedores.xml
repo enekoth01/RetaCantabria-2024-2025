@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proveedores>
+    <proveedor>
+        <proveedor_id>1</proveedor_id>
+        <proveedor_nombre>Proveedor A</proveedor_nombre>
+        <proveedor_telefono>123456789</proveedor_telefono>
+        <proveedor_email>proveedorA@example.com</proveedor_email>
+    </proveedor>
+    <proveedor>
+        <proveedor_id>2</proveedor_id>
+        <proveedor_nombre>Proveedor B</proveedor_nombre>
+        <proveedor_telefono>987654321</proveedor_telefono>
+        <proveedor_email>proveedorB@example.com</proveedor_email>
+    </proveedor>
+</proveedores>

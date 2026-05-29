@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../schemas/estilo_transformacion.xslt"?>
+<recursos>
+  <recurso>
+    <recurso_id>2</recurso_id>
+    <recurso_nombre>Ordenador</recurso_nombre>
+    <recurso_precio>1000.00</recurso_precio>
+    <recurso_estado>En reserva</recurso_estado>
+    <recurso_ubicacion>A001</recurso_ubicacion>
+  </recurso>
+  <recurso>
+    <recurso_id>4</recurso_id>
+    <recurso_nombre>Ordenador 0006</recurso_nombre>
+    <recurso_precio>1060.00</recurso_precio>
+    <recurso_estado>En reserva</recurso_estado>
+    <recurso_ubicacion>A001</recurso_ubicacion>
+  </recurso>
+  <recurso>
+    <recurso_id>3</recurso_id>
+    <recurso_nombre>Portátil</recurso_nombre>
+    <recurso_precio>1000.00</recurso_precio>
+    <recurso_estado>En reserva</recurso_estado>
+    <recurso_ubicacion>A001</recurso_ubicacion>
+  </recurso>
+</recursos>

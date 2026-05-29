@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/historialdeuso.xslt"?>
+<usuarios>
+  <usuario>
+    <usuario_id>1</usuario_id>
+    <usuario_nombre/>
+    <usuario_apellido/>
+    <usuario_usuario>Administrador</usuario_usuario>
+    <usuario_email/>
+  </usuario>
+  <usuario>
+    <usuario_id>2</usuario_id>
+    <usuario_nombre/>
+    <usuario_apellido/>
+    <usuario_usuario>aLopez2</usuario_usuario>
+    <usuario_email/>
+  </usuario>
+</usuarios>

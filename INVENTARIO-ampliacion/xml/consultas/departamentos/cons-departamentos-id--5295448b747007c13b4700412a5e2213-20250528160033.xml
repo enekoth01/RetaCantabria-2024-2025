@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/departamentos.xslt"?>
+<departamentos>
+  <departamento>
+    <departamento_id>3</departamento_id>
+    <departamento_nombre>Educación Física</departamento_nombre>
+    <departamento_ubicacion>E0-P0</departamento_ubicacion>
+    <responsable_id>Alma</responsable_id>
+  </departamento>
+  <departamento>
+    <departamento_id>2</departamento_id>
+    <departamento_nombre>Imagen Personal</departamento_nombre>
+    <departamento_ubicacion>E1-P2</departamento_ubicacion>
+    <responsable_id>Adrián</responsable_id>
+  </departamento>
+</departamentos>

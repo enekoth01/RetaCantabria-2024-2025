@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mantenimientos>
+    <mantenimiento>
+        <usuario_id>1</usuario_id>
+        <recurso_id>1</recurso_id>
+        <mantenimiento_fecha>2025-02-10</mantenimiento_fecha>
+        <mantenimiento_descripcion>Revisión general del proyector.</mantenimiento_descripcion>
+    </mantenimiento>
+    <mantenimiento>
+        <usuario_id>2</usuario_id>
+        <recurso_id>2</recurso_id>
+        <mantenimiento_fecha>2025-02-11</mantenimiento_fecha>
+        <mantenimiento_descripcion>Actualización de software del ordenador.</mantenimiento_descripcion>
+    </mantenimiento>
+</mantenimientos>

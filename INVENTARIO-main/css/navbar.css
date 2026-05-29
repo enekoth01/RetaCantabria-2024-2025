@@ -1,0 +1,86 @@
+main{
+    display: flex;
+}
+/* Coloca la barra a la izquierda como sidebar vertical */
+.navbar {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 240px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding-top: 1rem;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Evita que colapse al tamaño mínimo */
+.navbar-brand,
+.navbar-menu,
+.navbar-start{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: -10;
+}
+
+.navbar-end{
+    margin-top: 30em;
+    width: 100%;
+}
+
+/* Espaciado entre ítems */
+.navbar-item,
+.navbar-link {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Ajusta el logo */
+.navbar-brand {
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Alinea el logo centrado */
+.navbar-brand .navbar-item {
+    justify-content: center;
+}
+
+/* Botones Mi cuenta y Salir en columna */
+.navbar-end .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1rem;
+    gap: 0.5rem;
+}
+
+.navbar-end .button {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+
+/* Dropdowns (hover en vertical) */
+.navbar-item.has-dropdown:hover .navbar-dropdown {
+    display: flex !important;
+    flex-direction: column;
+    background: #f9f9f9;
+    padding-left: 1rem;
+}
+
+.navbar-dropdown .navbar-item {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Oculta el botón hamburguesa */
+.navbar-burger {
+    display: none;
+}
+

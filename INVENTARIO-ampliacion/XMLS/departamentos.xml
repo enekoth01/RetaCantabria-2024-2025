@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<departamentos>
+    <departamento>
+        <departamento_nombre>Informática</departamento_nombre>
+        <departamento_ubicacion>E1-P2</departamento_ubicacion>
+        <responsable_id>1</responsable_id>
+    </departamento>
+    <departamento>
+        <departamento_nombre>Imagen Personal</departamento_nombre>
+        <departamento_ubicacion>E1-P2</departamento_ubicacion>
+        <responsable_id>2</responsable_id>
+    </departamento>
+    <departamento>
+        <departamento_nombre>Educación Física</departamento_nombre>
+        <departamento_ubicacion>E0-P0</departamento_ubicacion>
+        <responsable_id>3</responsable_id>
+    </departamento>
+</departamentos>

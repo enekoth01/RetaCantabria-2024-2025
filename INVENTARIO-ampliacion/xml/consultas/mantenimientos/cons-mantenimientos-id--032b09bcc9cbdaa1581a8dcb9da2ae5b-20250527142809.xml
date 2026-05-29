@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../schemas/mantenimiento_estilo_transformacion.xslt"?>
+<mantenimientos>
+  <mantenimiento>
+    <mantenimiento_id>2</mantenimiento_id>
+    <usuario_id>2</usuario_id>
+    <recurso_id>2</recurso_id>
+    <fecha>2025-02-11</fecha>
+    <descripcion>Actualización de software del ordenador</descripcion>
+  </mantenimiento>
+  <mantenimiento>
+    <mantenimiento_id>14</mantenimiento_id>
+    <usuario_id>1</usuario_id>
+    <recurso_id>2</recurso_id>
+    <fecha>2025-05-01</fecha>
+    <descripcion>asasasd</descripcion>
+  </mantenimiento>
+  <mantenimiento>
+    <mantenimiento_id>7</mantenimiento_id>
+    <usuario_id>2</usuario_id>
+    <recurso_id>2</recurso_id>
+    <fecha>2025-05-26</fecha>
+    <descripcion>asasdds</descripcion>
+  </mantenimiento>
+</mantenimientos>

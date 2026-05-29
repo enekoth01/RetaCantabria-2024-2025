@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Elemento raíz -->
+    <xs:element name="mantenimientos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="mantenimiento" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="usuario_id" type="xs:int"/>
+                            <xs:element name="recurso_id" type="xs:int"/>
+                            <xs:element name="mantenimiento_fecha" type="xs:date"/>
+                            <xs:element name="mantenimiento_descripcion" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

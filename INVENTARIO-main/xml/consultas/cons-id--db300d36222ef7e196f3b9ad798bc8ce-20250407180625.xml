@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../schemas/estilo_transformacion.xslt"?>
+<recursos>
+  <recurso>
+    <recurso_id>2</recurso_id>
+    <recurso_nombre>Test</recurso_nombre>
+    <recurso_precio>600.00</recurso_precio>
+    <recurso_estado>En servicio</recurso_estado>
+    <recurso_ubicacion>A000</recurso_ubicacion>
+  </recurso>
+</recursos>

@@ -1,0 +1,21 @@
+main{
+    display: flex;
+}.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Esto ya lo tienes */
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.navbar-start {
+    flex-grow: 1; /* Ocupa el espacio disponible */
+}
+
+.navbar-end {
+    margin-top: auto; /* Empuja hacia abajo */
+    padding-bottom: 1rem; /* Espaciado inferior opcional */}

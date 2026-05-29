@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+    <usuario>
+        <usuario_id>1</usuario_id>
+        <usuario_nombre>Administrador</usuario_nombre>
+        <usuario_apellido>Principal</usuario_apellido>
+        <usuario_usuario>Administrador</usuario_usuario>
+        <usuario_telefono></usuario_telefono>
+        <usuario_email>administrador@reto.es</usuario_email>
+        <usuario_clave>$2y$10$EPY9LSLOFLDDBriuJICmFOqmZdnDXxLJG8YFbog5LcExp77DBQvgC</usuario_clave>
+    </usuario>
+    <usuario>
+        <usuario_id>2</usuario_id>
+        <usuario_nombre>Adrián</usuario_nombre>
+        <usuario_apellido>López</usuario_apellido>
+        <usuario_usuario>aLopez2</usuario_usuario>
+        <usuario_telefono></usuario_telefono>
+        <usuario_email>alopez2@reto.es</usuario_email>
+        <usuario_clave>$2y$10$HqX4egjYYDbiVh.fBN9Ixu68i8tUefUUZjlHqhzgBMAQUaVQD82zu</usuario_clave>
+    </usuario>
+    <usuario>
+        <usuario_id>3</usuario_id>
+        <usuario_nombre>Alma</usuario_nombre>
+        <usuario_apellido>Pereda</usuario_apellido>
+        <usuario_usuario>aPereda3</usuario_usuario>
+        <usuario_telefono></usuario_telefono>
+        <usuario_email>apereda3@reto.es</usuario_email>
+        <usuario_clave>$2y$10$9PbCz1MCEXCpHrM.uRDKCuG8eSpICoor6JrqNbkmm28HykEc.hoHS</usuario_clave>
+    </usuario>
+    <usuario>
+        <usuario_id>4</usuario_id>
+        <usuario_nombre>Ana</usuario_nombre>
+        <usuario_apellido>Perez</usuario_apellido>
+        <usuario_usuario>aPerez1</usuario_usuario>
+        <usuario_telefono></usuario_telefono>
+        <usuario_email>aperez1@reto.es</usuario_email>
+        <usuario_clave>$2y$10$uoqPJ/Ncnp025te2EKgoXueIn95upSABa9i47Hrs2kdRDRsUtaQW6</usuario_clave>
+    </usuario>
+</usuarios>

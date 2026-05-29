@@ -1,0 +1,110 @@
+<!--
+	* Nombre del fichero: resource_new.php
+	* Descripción: Formulario para crear un nuevo recurso
+	* 
+	* Autor: RetaCantabria - ASIR1 - Dpto. Informática - IES Alisal
+	* Fecha: Marzo 2025
+	* 
+	* Parámetros de entrada: Ninguno
+	* 
+	* Salida: Ninguno
+-->
+
+<div class="container is-fluid mb-6">
+	<h1 class="title">Recursos</h1>
+	<h2 class="subtitle">Nuevo recurso</h2>
+
+
+<div class="container pb-6 pt-6">
+	<?php
+		require_once "./php/main.php";
+	?>
+
+	<div class="form-rest mb-6 mt-6"></div>
+
+	<form action="./php/recurso_guardar.php" method="POST" class="FormularioAjax" autocomplete="off" enctype="multipart/form-data" >
+		<div class="columns">
+			<div class="column">
+				<div class="control">
+					<label>Código</label>
+					<input class="input" type="text" name="recurso_codigo" pattern="[A-Z]{3}-[0-9]{4}" maxlength="8" placeholder="[A-Z]{3}-[0-9]{4}" title="3 letras mayúsculas y 4 dígitos separados por -" required >
+				</div>
+			</div>
+			<div class="column">
+				<div class="control">
+					<label>Nombre</label>
+					<input class="input" type="text" name="recurso_nombre" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,$#\-\/ ]{1,50}" maxlength="50" placeholder="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,$#\-\/ ]{1,50}" title="Puede contener letras, números, acentos, ñ, paréntesis, puntos, comas, signos de dólar, guiones y espacios. Máximo 50 caracteres." required >
+				</div>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column">
+				<div class="control">
+					<label>Precio</label>
+					<input class="input" type="text" name="recurso_precio" pattern="[0-9]+(\.[0-9]{1,2})?" maxlength="25" placeholder="[0-9]{2,22}(,[0-9]{1,2})?" title="Número de dos decimales de hasta 23 cifras la parte entera" required >
+				</div>
+			</div>
+			<div class="column">
+				<label>Aula</label><br>
+				<div class="select is-rounded">
+					<select name="recurso_aula" >
+						<option value="" selected="" >Seleccione una opción</option>
+						<?php
+							$aulas=conexion();
+							$aulas=$aulas->query("SELECT * FROM aulas");
+							if($aulas->rowCount()>0){
+								$aulas=$aulas->fetchAll();
+								foreach($aulas as $row){
+									echo '<option value="'.$row['aula_id'].'" >'.$row['aula_nombre'].'</option>';
+								}
+							}
+							$aulas=null;
+						?>
+					</select>
+				</div>
+			</div>
+
+			<div class="column">
+				<label>Estado</label><br>
+				<div class="select is-rounded">
+					<select name="recurso_estado">
+						<?php
+							$estados=conexion();
+							$estados=$estados->query("SELECT * FROM estado");
+							if($estados->rowCount()>0){
+								$estados=$estados->fetchAll();
+								foreach($estados as $row){
+									if($datos['estado_id']==$row['estado_id']){
+										echo '<option value="'.$row['estado_id'].'" selected="" >'.$row['descripcion'].' (Actual)</option>';
+									}else{
+										echo '<option value="'.$row['estado_id'].'" >'.$row['descripcion'].'</option>';
+									}
+								}
+							}
+							$estados=null;
+						?>
+					</select>
+				</div>
+			</div>
+		</div>
+		
+		<div class="columns">
+			<div class="column">
+				<label>Foto o imagen del recurso</label><br>
+				<div class="file is-small has-name">
+					<label class="file-label">
+						<input class="file-input" type="file" name="recurso_foto" accept=".jpg, .png, .jpeg" >
+						<span class="file-cta">
+							<span class="file-label">Imagen</span>
+						</span>
+						<span class="file-name">JPG, JPEG, PNG. (MAX 3MB)</span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<p class="has-text-centered">
+			<button type="submit" class="button is-info is-rounded">Guardar</button>
+		</p>
+	</form>
+</div>
+</div>

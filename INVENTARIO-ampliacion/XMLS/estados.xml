@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estados>
+    <estado>
+        <estado_descripcion>En reserva</estado_descripcion>
+    </estado>
+    <estado>
+        <estado_descripcion>En reparación</estado_descripcion>
+    </estado>
+    <estado>
+        <estado_descripcion>En servicio</estado_descripcion>
+    </estado>
+    <estado>
+        <estado_descripcion>Fuera de servicio</estado_descripcion>
+    </estado>
+</estados>

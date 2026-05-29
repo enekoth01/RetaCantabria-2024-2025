@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aulas>
+    <aula>
+        <aula_nombre>A000</aula_nombre>
+        <aula_ubicacion>E1-P0</aula_ubicacion>
+        <aula_descripcion>Aula multiusos</aula_descripcion>
+    </aula>
+    <aula>
+        <aula_nombre>A001</aula_nombre>
+        <aula_ubicacion>E1-P0</aula_ubicacion>
+        <aula_descripcion>Aula TIC</aula_descripcion>
+    </aula>
+    <aula>
+        <aula_nombre>A111</aula_nombre>
+        <aula_ubicacion>E1-P1</aula_ubicacion>
+        <aula_descripcion>Laboratorio de física</aula_descripcion>
+    </aula>
+    <aula>
+        <aula_nombre>A113</aula_nombre>
+        <aula_ubicacion>E1-P1</aula_ubicacion>
+        <aula_descripcion>Laboratorio de ciencias</aula_descripcion>
+    </aula>
+    <aula>
+        <aula_nombre>A212</aula_nombre>
+        <aula_ubicacion>E1-P2</aula_ubicacion>
+        <aula_descripcion>Aula Info</aula_descripcion>
+    </aula>
+    <aula>
+        <aula_nombre>A210</aula_nombre>
+        <aula_ubicacion>E1-P2</aula_ubicacion>
+        <aula_descripcion>Aula CFAD2</aula_descripcion>
+    </aula>
+</aulas>

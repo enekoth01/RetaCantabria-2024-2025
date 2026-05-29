@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../schemas/mantenimiento_estilo_transformacion.xslt"?>
+<mantenimientos>
+  <mantenimiento>
+    <mantenimiento_id>1</mantenimiento_id>
+    <usuario_id>1</usuario_id>
+    <recurso_id>1</recurso_id>
+    <fecha>2025-02-10</fecha>
+    <descripcion>Revisi¢n general del proyector</descripcion>
+  </mantenimiento>
+  <mantenimiento>
+    <mantenimiento_id>2</mantenimiento_id>
+    <usuario_id>2</usuario_id>
+    <recurso_id>2</recurso_id>
+    <fecha>2025-02-11</fecha>
+    <descripcion>Actualizaci¢n de software del ordenador</descripcion>
+  </mantenimiento>
+</mantenimientos>

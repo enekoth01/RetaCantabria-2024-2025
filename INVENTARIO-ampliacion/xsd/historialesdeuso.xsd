@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Elemento raíz -->
+    <xs:element name="historial_usos">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Uno o más elementos 'historial_uso' -->
+                <xs:element name="historial_uso" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- ID del usuario -->
+                            <xs:element name="usuario_id" type="xs:int"/>
+                            <!-- ID del recurso -->
+                            <xs:element name="recurso_id" type="xs:int"/>
+                            <!-- Fecha y hora de inicio del uso -->
+                            <xs:element name="uso_fecha_inicio" type="xs:dateTime"/>
+                            <!-- Fecha y hora de fin del uso -->
+                            <xs:element name="uso_fecha_fin" type="xs:dateTime"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

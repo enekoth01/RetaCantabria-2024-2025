@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Elemento raíz -->
+    <xs:element name="aulas">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Uno o más elementos 'aula' -->
+                <xs:element name="aula" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Nombre del aula -->
+                            <xs:element name="aula_nombre" type="xs:string"/>
+                            <!-- Ubicación del aula -->
+                            <xs:element name="aula_ubicacion" type="xs:string"/>
+                            <!-- Descripción del aula -->
+                            <xs:element name="aula_descripcion" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

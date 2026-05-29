@@ -1,0 +1,89 @@
+/* Estructura base - esencial */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal del body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor del contenido principal */
+.content-mainfoot {
+    flex: 1;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 0 !important;  /* Elimina el espacio del navbar */
+    width: 100%;               /* Ocupa todo el ancho */
+}
+
+/* Main Container - Formulario de login */
+.main-container {
+    width: 100%;
+    max-width: 450px; /* Ancho óptimo para formularios */
+    margin: 0 auto 40px auto; /* Centrado con margen inferior */
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Container */
+.footer-container {
+    width: 100%;
+    max-width: 600px; /* Más ancho que el formulario */
+    margin: 0 auto; /* Centrado */
+    padding: 15px 20px;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* Estilos para el texto del login */
+.manul-texto-login {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #3498db;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 25px;
+        max-width: 90%; /* Más ancho en móviles */
+        margin-bottom: 30px;
+    }
+    
+    .footer-container {
+        max-width: 90%;
+        padding: 10px 15px;
+    }
+    
+    .manul-texto-login {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-container {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/proveedores.xslt"?>
+<proveedores>
+  <proveedor>
+    <proveedor_id>2</proveedor_id>
+    <proveedor_nombre>Proveedor B</proveedor_nombre>
+    <proveedor_telefono>987654321</proveedor_telefono>
+    <proveedor_email>proveedorB@example.com</proveedor_email>
+  </proveedor>
+</proveedores>

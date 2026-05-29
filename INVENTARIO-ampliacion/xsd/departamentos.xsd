@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Elemento raíz -->
+    <xs:element name="departamentos">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Uno o más elementos 'departamento' -->
+                <xs:element name="departamento" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Nombre del departamento -->
+                            <xs:element name="departamento_nombre" type="xs:string"/>
+                            <!-- Ubicación del departamento -->
+                            <xs:element name="departamento_ubicacion" type="xs:string"/>
+                            <!-- ID del responsable -->
+                            <xs:element name="responsable_id" type="xs:positiveInteger"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
