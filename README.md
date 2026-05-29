@@ -1,10 +1,10 @@
-# Reta Cantabria 2025
+# Reta Cantabria 2024/2025
 
 Proyecto académico basado en la adaptación y ampliación de una aplicación web de inventario en PHP y SQL, desarrollado en el marco del proyecto **ABS Alisal Me Activa** del ciclo de **Administración de Sistemas Informáticos en Red (ASIR)**.
 
 ## Descripción general
 
-**Reta Cantabria 2025** es una plantilla de trabajo orientada a la modificación de una aplicación web existente para adaptarla a nuevos requisitos funcionales, estructurales y visuales.
+**Reta Cantabria 2024/2025** es una plantilla de trabajo orientada a la modificación de una aplicación web existente para adaptarla a nuevos requisitos funcionales, estructurales y visuales.
 
 El proyecto se centra en la integración entre aplicación web y base de datos, la adaptación de operaciones CRUD, la validación de datos en XML, la transformación XSL y la mejora de la interfaz, todo ello dentro de un entorno de desarrollo colaborativo y documentado.
 
